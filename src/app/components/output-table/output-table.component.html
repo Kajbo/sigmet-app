@@ -1,0 +1,19 @@
+<section class="parentContainer">
+    <section *ngFor="let tableElement of tableData; let i = index">
+        <section style="background-color: lightblue;">
+            {{tableElement.stationId}}
+        </section>
+        <section style="display: flex; gap:10px">
+            <section>
+                {{tableElement.reportType}}
+            </section>
+            <section style="min-width: 80px;max-width: 100px;">
+                {{ tableElement.reportTimeSlovak }}
+            </section>
+            <section>
+                <app-text-coloring [text]="tableElement.text" ></app-text-coloring>
+            </section>
+        </section>
+    </section>
+</section>
+

@@ -1,0 +1,12 @@
+
+<section *ngIf="isError" class="error-message">ERROR: {{errorMessage}}</section>
+<app-form-input 
+    [(isMetar)]="isMetar"
+    [(isSigmet)]="isSigmet"
+    [(isTaf)]="isTaf"
+    [(airports)]="airports"
+    [(countries)]="countries"
+    (buttonClicked)="submitData($event)"
+    >
+</app-form-input>
+<app-output-table *ngIf="tableData.length" [tableData]="tableData"></app-output-table>

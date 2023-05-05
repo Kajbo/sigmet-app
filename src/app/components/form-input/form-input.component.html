@@ -1,0 +1,38 @@
+<section class="input-form-container">
+    <section class="inline-row">
+        <section>
+            Message type:
+        </section>
+        <section>
+            <input type="checkbox" name="metar" [(ngModel)]="isMetar">
+            <label for="metar">METAR</label>
+            <input type="checkbox" name="sigmet" [(ngModel)]="isSigmet">
+            <label for="sigmet">SIGMET</label>
+            <input type="checkbox" name="taf" [(ngModel)]="isTaf">
+            <label for="taf">TAF</label>
+        </section>
+    </section>
+    
+    <section class="inline-row">
+        <section>
+            Airports:
+        </section>
+        <section>
+            <input [(ngModel)]="airports">
+        </section>
+    </section>
+    
+    <section class="inline-row">
+        <section>
+            Countries:
+        </section>
+        <section>
+            <input [(ngModel)]="countries">
+        </section>
+    </section>
+    <section>
+        <button class="form-button" (click)="clickButton()">
+            Create briefing
+        </button>
+    </section>
+</section>

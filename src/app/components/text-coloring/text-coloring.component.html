@@ -1,0 +1,7 @@
+<section style="display: flex;flex-wrap: wrap;gap: 0 0.5em;">
+    <section *ngFor="let text of textsWithColor" >
+        <section *ngIf="text.color == 'blue'" style="color:blue" >{{text.value}}</section>
+        <section *ngIf="text.color == 'red'" style="color:red" >{{text.value}}</section>
+        <section *ngIf="text.color == 'black'" style="color:black" >{{text.value}}</section>
+    </section>
+</section>
