@@ -7,9 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { OpmetService } from './services/opmet.service';
 import { HttpClientModule } from '@angular/common/http';
 import { OutputTableComponent } from './components/output-table/output-table.component';
-// import { TimeFormatConverterComponent } from './components/time-format-converter/time-format-converter.component';
 import { TextColoringComponent } from './components/text-coloring/text-coloring.component';
-// import { FormMainComponent, InputFormComponent } from './components';
 
 @NgModule({
   declarations: [
@@ -17,7 +15,6 @@ import { TextColoringComponent } from './components/text-coloring/text-coloring.
     FormInputComponent,
     FormMainComponent,
     OutputTableComponent,
-    // TimeFormatConverterComponent,
     TextColoringComponent
 ],
 imports: [
