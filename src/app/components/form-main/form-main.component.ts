@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OpmetService } from 'src/app/services/opmet.service';
+import { OpmetService } from 'src/app/services/';
 import { OmpetResult, OpmetApiResponse } from '../../models'
 import { getOpmetApiPostRequestQuery } from 'src/app/helpers';
 

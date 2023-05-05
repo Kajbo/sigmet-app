@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { OmpetResult, OpmetApiPostRequestQuery, OpmetApiResponse } from '../models';
+import { OpmetApiPostRequestQuery, OpmetApiResponse } from '../models';
 import { Observable } from 'rxjs/internal/Observable';
-import { finalize } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',

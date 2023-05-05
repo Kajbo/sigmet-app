@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
-import { OmpetResult, OpmetApiResponse } from 'src/app/models';
+import { Component, Input, SimpleChanges } from '@angular/core';
+import { OmpetResult } from 'src/app/models';
 
 @Component({
   selector: 'app-output-table',
