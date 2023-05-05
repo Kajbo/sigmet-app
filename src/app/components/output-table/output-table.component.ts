@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
-import { OmpetResult } from 'src/app/models';
+import { OmpetResult } from '../../models';
 
 @Component({
   selector: 'app-output-table',
