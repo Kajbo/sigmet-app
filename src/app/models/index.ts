@@ -30,3 +30,8 @@ export type OpmetApiResponse = {
     id: string,
     result: OmpetResult[]
 }
+
+export type TextColor = {
+    value:string, 
+    color:string
+}

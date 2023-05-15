@@ -1,4 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
+import { TextColor } from 'src/app/models';
 
 @Component({
   selector: 'app-text-coloring',
@@ -7,7 +8,7 @@ import { Component, Input, SimpleChanges } from '@angular/core';
 })
 export class TextColoringComponent {
     @Input() text = '';
-    textsWithColor:{value:string, color:string}[] = []
+    textsWithColor:TextColor[] = []
     
     getTextColor () {
         const elements = this.text.split(' ')
