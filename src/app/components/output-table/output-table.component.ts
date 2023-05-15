@@ -7,9 +7,14 @@ import { OmpetResult } from '../../models';
   styleUrls: ['./output-table.component.css']
 })
 export class OutputTableComponent {
-    @Input() tableData?:OmpetResult[] = [];
+    @Input() inputData?:OmpetResult[] = [];
+    tableData:Record<string, OmpetResult> = {}
     
     ngOnChanges(changes: SimpleChanges) {
-        // changes.prop contains the old and the new value...
+        this.tableData = {}
+        changes['inputData'].currentValue.forEach((element:OmpetResult) => {
+            this.tableData[element.stationId] = element
+        });
+        
     }
 }
