@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
-import { TextColor } from 'src/app/models';
+import { TextColor } from '../../models';
 
 @Component({
   selector: 'app-text-coloring',
