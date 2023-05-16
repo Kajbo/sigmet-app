@@ -3,15 +3,15 @@
         <section style="background-color: lightblue;">
             {{tableElement.key}}
         </section>
-        <section style="display: flex; gap:10px">
+        <section *ngFor="let dataRow of tableElement.value" style="display: flex; gap:10px">
             <section>
-                {{tableElement.value.reportType}}
+                {{dataRow.reportType}}
             </section>
             <section style="min-width: 80px;max-width: 100px;">
-                {{ tableElement.value.reportTimeSlovak }}
+                {{ dataRow.reportTimeSlovak }}
             </section>
             <section>
-                <app-text-coloring [text]="tableElement.value.text" ></app-text-coloring>
+                <app-text-coloring [text]="dataRow.text" ></app-text-coloring>
             </section>
         </section>
     </section>

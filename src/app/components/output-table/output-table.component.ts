@@ -8,12 +8,15 @@ import { OmpetResult } from '../../models';
 })
 export class OutputTableComponent {
     @Input() inputData?:OmpetResult[] = [];
-    tableData:Record<string, OmpetResult> = {}
+    tableData:Record<string, OmpetResult[]> = {}
     
     ngOnChanges(changes: SimpleChanges) {
         this.tableData = {}
         changes['inputData'].currentValue.forEach((element:OmpetResult) => {
-            this.tableData[element.stationId] = element
+            if (!this.tableData[element.stationId]) {
+                this.tableData[element.stationId] = []
+            }
+            this.tableData[element.stationId].push(element)
         });
         
     }
